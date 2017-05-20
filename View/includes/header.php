@@ -63,8 +63,8 @@
                         <li><a class="waves-effect" href="cadastrar-familiar.php">Familiar</a></li>
                         <li><a class="waves-effect" href="cadastrar-dispositivo.php">Dispositivo</a></li>
                         <li><a class="waves-effect" href="cadastrar-sensor.php">Sensor</a></li>
-                        <li><a class="waves-effect" href="cadastrar-bengala.php">Bengala</a></li>
-                        <li><a class="waves-effect" href="cadastrar-oculos.php">Óculos</a></li>
+<!--                        <li><a class="waves-effect" href="cadastrar-bengala.php">Bengala</a></li>-->
+                        <li><a class="waves-effect" href="cadastrarObjeto.php">Objeto</a></li>
                         <li><a class="waves-effect" href="cadastrar-residencia.php">Residência</a></li>
                     </ul>
                 </div>
