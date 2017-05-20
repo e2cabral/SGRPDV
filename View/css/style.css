@@ -1,0 +1,16 @@
+* {
+
+}
+body {
+    background-image: url("");
+    background-attachment: fixed;
+    background-size: cover;
+/*    filter: grayscale(100%)*/
+}
+#entrar, #cadastrar {
+    width: 100%;
+    height: 700px;
+}
+textarea {
+    height: 250px;
+}
