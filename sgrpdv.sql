@@ -1,5 +1,5 @@
-# Host: localhost  (Version 5.7.14)
-# Date: 2017-05-19 20:09:06
+﻿# Host: localhost  (Version 5.7.14)
+# Date: 2017-05-21 14:42:26
 # Generator: MySQL-Front 6.0  (Build 1.88)
 
 
@@ -48,7 +48,7 @@ CREATE TABLE `dispositivo` (
 #
 
 /*!40000 ALTER TABLE `dispositivo` DISABLE KEYS */;
-INSERT INTO `dispositivo` VALUES (1,'Com 8','Mega','Embaixo da cama'),(2,'Com 6','Leonardo','Arduino em funcionamento.'),(3,'Com 2','Uno','Funciona legalzin.');
+INSERT INTO `dispositivo` VALUES (3,'Com 2','Uno','Funciona legalzin.');
 /*!40000 ALTER TABLE `dispositivo` ENABLE KEYS */;
 
 #
@@ -81,6 +81,45 @@ INSERT INTO `familiar` VALUES (3,'Lucinete','17269983','47','lucineteSantos','00
 /*!40000 ALTER TABLE `familiar` ENABLE KEYS */;
 
 #
+# Structure for table "objeto"
+#
+
+DROP TABLE IF EXISTS `objeto`;
+CREATE TABLE `objeto` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `descricao` varchar(255) DEFAULT NULL,
+  `tipoObjeto` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+#
+# Data for table "objeto"
+#
+
+/*!40000 ALTER TABLE `objeto` DISABLE KEYS */;
+INSERT INTO `objeto` VALUES (1,'Bengalona muito maneira!','Bengala'),(3,'                            Ã“culoszÃ£o nÃ£o muito legal!                        ','Oculos');
+/*!40000 ALTER TABLE `objeto` ENABLE KEYS */;
+
+#
+# Structure for table "residencia"
+#
+
+DROP TABLE IF EXISTS `residencia`;
+CREATE TABLE `residencia` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `descricao` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+#
+# Data for table "residencia"
+#
+
+/*!40000 ALTER TABLE `residencia` DISABLE KEYS */;
+INSERT INTO `residencia` VALUES (1,'Minha casa minha vida TCHUK!');
+/*!40000 ALTER TABLE `residencia` ENABLE KEYS */;
+
+#
 # Structure for table "sensor"
 #
 
@@ -96,5 +135,5 @@ CREATE TABLE `sensor` (
 #
 
 /*!40000 ALTER TABLE `sensor` DISABLE KEYS */;
-INSERT INTO `sensor` VALUES (1,'                            Em funcionamento                        '),(2,'Sensor de GÃ¡s'),(3,'Sensor de DistÃ¢ncia');
+INSERT INTO `sensor` VALUES (1,'SensorzÃ£o muito loko!');
 /*!40000 ALTER TABLE `sensor` ENABLE KEYS */;
