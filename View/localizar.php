@@ -27,7 +27,8 @@ function showPosition(position) {
     var center =new google.maps.LatLng(lat, lng);
     var mapProp= {
         center:center,
-        zoom:14
+        zoom:16,
+        mapTypeId:google.maps.MapTypeId.SATELLITE
     };
     var map=new google.maps.Map(x,mapProp);
     var marker = new google.maps.Marker({
