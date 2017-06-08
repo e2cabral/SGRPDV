@@ -70,7 +70,7 @@
                 </div>
             </li>
         </ul>
-        <li><a class="waves-effect collapsible-header" href="editar.php">Editar<i class="material-icons left">mode_edit</i></a></li>
+        <li><a class="waves-effect collapsible-header" href="editar.php">Consultar<i class="material-icons left">mode_edit</i></a></li>
         <li><a class="waves-effect collapsible-header" href="localizar.php">Localizar Deficiente<i class="material-icons left">location_on</i></a></li>
 <!--        <li class="no-padding"><a class="waves-effect collapsible-header" href="#!">Configurações<i class="material-icons left">settings</i></a></li>-->
     </ul>
