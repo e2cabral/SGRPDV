@@ -3,9 +3,9 @@
     <article class="container">
         <h4 class="grey-text darken-4 center">Cadastrar Bengala</h4>
         <section class="row">
-            <div class="col s12 m12 l12">
+            <div class="col s6 m6 l6">
                 <form action="" method="post">
-                    <div class="col s12 m12 l12 input-field">
+                    <div class="col s6 m6 l6 input-field">
                         <br />
                         <textarea name="disc" id="disc" cols="30" rows="150">
 

@@ -2,7 +2,8 @@
 include 'includes/header.php';
 include './../Controller/editarPageCtrl.php';
 ?>
-<div class="">
+
+<div class="row">
     <article class="col s12 m12 l12">
         <section class="container">
             <form action="../Controller/editarFinalData.php" method="post">

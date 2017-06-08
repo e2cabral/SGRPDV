@@ -1,5 +1,5 @@
 <?php include 'includes/header.php'; ?>
-    <article class="col s12 m12 l12">
+    <article class="col s6 m6 l6">
         <div class="container">
             
             <div class="" id="mapa">

@@ -5,23 +5,23 @@
         <section class="row">
             <div class="col s12 m12 l12">
                 <form action="../Controller/cadastrarDeficienteCtrl.php" method="post">
-                    <div class="col s12 m12 l12 input-field">
+                    <div class="col s6 m6 l6 input-field">
                         <input type="text" title="Digite seu nome completo" id="nome" name="nome" required />
                         <label for="nome">Digite seu nome completo</label>
                     </div>
-                    <div class="col s12 m12 l12 input-field">
+                    <div class="col s6 m6 l6 input-field">
                         <input type="number" title="Digite seu cpf" id="cpf" name="cpf" required />
                         <label for="cpf">Digite seu CPF</label>
                     </div>
-                    <div class="col s12 m12 l12 input-field">
-                        <input type="number" title="Digite sua idade" id="idade" name="idade" required />
+                    <div class="col s6 m6 l6 input-field">
+                        <input type="text" title="Digite sua idade" id="idade" name="idade" required />
                         <label for="idade">Digite sua idade</label>
                     </div>
-                    <div class="col s12 m12 l12 input-field">
+                    <div class="col s6 m6 l6 input-field">
                         <input type="text" title="Digite o seu endereço" id="endereco" name="endereco" required />
                         <label for="">Digite o seu endereço</label>
                     </div>
-                    <div class="col s12 m12 l12 input-field">
+                    <div class="col s6 m6 l6 input-field">
                         <input type="text" title="Digite o seu bairro" id="bairro" name="bairro" required />
                         <label for="bairro">Digite o seu bairro</label>
                     </div>
@@ -41,7 +41,7 @@
                         <input type="tel" title="Digite o seu celular" id="cel" name="cel" required />
                         <label for="cel">Digite o seu celular</label>
                     </div>
-                    <div class="input-field col s12 m12 l12">
+                    <div class="input-field col s6 m6 l6">
                         <select name="def">
                             <option value="" disabled selected>Escolha uma opção</option>
                             <option value="congenita">Congênita</option>

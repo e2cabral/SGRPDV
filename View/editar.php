@@ -3,152 +3,112 @@ include 'includes/header.php';
 include './../Controller/editarCtrl.php';
 ?>
 <div class="">
-    <article class="col s12 m12 l12">
+    <article class="col s6 m6 l6">
         <article class="row">
-            <section class="col s6 m6 l6">
-                <div class="">
-                <h4 class="center">Lista de Usuarios</h4>
-                <div class="divider"></div>
-                <table class="highlight bordered">
-                    <thead>
-                        <tr>
-                            <th>Email</th><th>Login</th><th>Senha</th><th>Grau de parentesco</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-<!--                            <td>Lucas</td><td>161517761</td><td><a href="" name="cpf">Atualizar</a></td><td><a href="#!">Excluir</a></td>-->
+            <section class="col s4 m4 l4">
+                <ul class="collection with-header">
+                    <li class="collection-header center"><h5>Familiares</h5></li>
                             <?php
                                 foreach($familia as $fam){
-                                    echo "<tr><td>{$fam->nome}</td><td>{$fam->login}</td><td>{$fam->senha}</td><td>{$fam->grauParentesco}</td><td><a href='pageEdit.php?id=".base64_encode($fam->cpf)."'>Editar</a></td><td><a href='../Controller/deleteCtrl.php?idfam=".base64_encode($fam->cpf)."'>Excluir</a></td></tr>";
+                                    echo "<li class='collection-item avatar'>"
+                                        . "<span class='title'>{$fam->nome}</span>"
+                                        . "<p>{$fam->login} | "
+                                        . "{$fam->senha}</p>"
+                                        . "<p class='secondary-content'><a class='' href='pageEdit.php?id=".base64_encode($fam->cpf)."'>Editar</a><br>"
+                                        . "<a class='' href='../Controller/deleteCtrl.php?idfam=".base64_encode($fam->cpf)."'>Excluir</a></p>"
+                                    . "</li>";
                                     //echo '<br><br>';
                                 }
                             ?>
-                    </tbody>
-                    <tfoot>
-
-                    </tfoot>
-                </table>
-                </div>
+                    </ul>
             </section>
-            <section class="col s6 m6 l6">
-                <div class="">
-                <h4 class="center">Lista de Deficientes</h4>
-                <div class="divider"></div>
-                <table class="highlight bordered">
-                    <thead>
-                        <tr>
-                            <th>Email</th><th>Cpf</th><th>Telefone</th><th>Grau de Deficiência</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
+            
+            <section class="col s4 m4 l4">
+                <ul class="collection with-header">
+                    <li class="collection-header center"><h5>Deficientes</h5></li>
+                            <?php
                                 foreach($deficiente as $def){
-                                    echo "<tr><td>{$def->nome}</td><td>{$def->cpf}</td><td>{$def->telefone}</td><td>{$def->grauDeficiencia}</td><td><a href='pageEditDef.php?id=".base64_encode($def->cpf)."'>Editar</a></td><td><a href='../Controller/deleteCtrl.php?iddef=".base64_encode($def->cpf)."'>Excluir</a></td></tr>";
+                                    echo "<li class='collection-item avatar'>"
+                                        . "<span class='title'>{$def->nome}</span>"
+                                        . "<p>{$def->cpf} | "
+                                        . "{$def->telefone}</p>"
+                                        . "<p class='secondary-content'><a class='' href='pageEditDef.php?id=".base64_encode($def->cpf)."'>Editar</a><br>"
+                                        . "<a class='' href='../Controller/deleteCtrl.php?iddef=".base64_encode($def->cpf)."'>Excluir</a></p>"
+                                    . "</li>";
                                     //echo '<br><br>';
                                 }
                             ?>
-                    </tbody>
-                    <tfoot>
-
-                    </tfoot>
-                </table>
-                </div>
+                    </ul>
             </section>
-            <section class="col s6 m6 l6">
-                <div class="">
-                <h4 class="center">Lista de Dispositivos</h4>
-                <div class="divider"></div>
-                <table class="highlight bordered">
-                    <thead>
-                        <tr>
-                            <th>Serial</th><th>Tipo</th><th>Descrição</th><th>Id</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                            foreach($dispositivo as $disp){
-                                echo "<tr><td>{$disp->serial}</td><td>{$disp->tipo}</td><td>{$disp->descricao}</td><td>{$disp->Id}</td><td><a href='pageEditDisp.php?id=".base64_encode($disp->Id)."'>Editar</a></td><td><a href='../Controller/deleteCtrl.php?iddisp=".base64_encode($disp->Id)."'>Excluir</a></td></tr>";
-                                //echo '<br><br>';
-                            }
-                        ?>
-                    </tbody>
-                    <tfoot>
-
-                    </tfoot>
-                </table>
-                </div>
+            
+            <section class="col s4 m4 l4">
+                <ul class="collection with-header">
+                    <li class="collection-header center"><h5>Dispositivos</h5></li>
+                            <?php
+                                foreach($dispositivo as $disp){
+                                    echo "<li class='collection-item avatar'>"
+                                        . "<span class='title'>{$disp->serial}</span>"
+                                        . "<p>{$disp->tipo} | "
+                                        . "{$disp->descricao}</p>"
+                                        . "<p class='secondary-content'><a class='' href='pageEditDisp.php?id=".base64_encode($disp->Id)."'>Editar</a><br>"
+                                        . "<a class='' href='../Controller/deleteCtrl.php?iddisp=".base64_encode($disp->Id)."'>Excluir</a></p>"
+                                    . "</li>";
+                                    //echo '<br><br>';
+                                }
+                            ?>
+                    </ul>
             </section>
-            <section class="col s6 m6 l6">
-                <div class="">
-                <h4 class="center">Lista de Sensores</h4>
-                <div class="divider"></div>
-                <table class="highlight bordered">
-                    <thead>
-                        <tr>
-                            <th>Descrição</th><th>Id</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
+            
+            <section class="col s4 m4 l4">
+                <ul class="collection with-header">
+                    <li class="collection-header center"><h5>Sensores</h5></li>
+                            <?php
                                 foreach($sensor as $sen){
-                                    echo "<tr><td>{$sen->descricao}</td><td>{$sen->Id}</td><td><a href='pageEditSensor.php?id=".base64_encode($sen->Id)."'>Editar</a></td><td><a href='../Controller/deleteCtrl.php?idsen=".base64_encode($sen->Id)."'>Excluir</a></td></tr>";
+                                    echo "<li class='collection-item avatar'>"
+                                        . "<span class='title'>{$sen->descricao}</span>"
+                                        . "<p>{$sen->Id}</p>"
+                                        . "<p class='secondary-content'><a class='' href='pageEditSensor.php?id=".base64_encode($sen->Id)."'>Editar</a><br>"
+                                        . "<a class='' href='../Controller/deleteCtrl.php?idsen=".base64_encode($sen->Id)."'>Excluir</a></p>"
+                                    . "</li>";
                                     //echo '<br><br>';
                                 }
                             ?>
-                    </tbody>
-                    <tfoot>
-
-                    </tfoot>
-                </table>
-                </div>
+                    </ul>
             </section>
-            <section class="col s6 m6 l6">
-                <div class="">
-                <h4 class="center">Lista de Objetos</h4>
-                <div class="divider"></div>
-                <table class="highlight bordered">
-                    <thead>
-                        <tr>
-                            <th>Descrição</th><th>Tipo</th><th>Id</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                            foreach($objeto as $o){
-                                echo "<tr><td>{$o->descricao}</td><td>{$o->tipoObjeto}</td><td>{$o->Id}</td><td><a href='pageEditObjeto.php?id=".base64_encode($o->Id)."'>Editar</a></td><td><a href='../Controller/deleteCtrl.php?idob=".base64_encode($o->Id)."'>Excluir</a></td></tr>";
-                                //echo '<br><br>';
-                            }
-                        ?>
-                    </tbody>
-                    <tfoot>
-
-                    </tfoot>
-                </table>
-                </div>
+            
+            <section class="col s4 m4 l4">
+                <ul class="collection with-header">
+                    <li class="collection-header center"><h5>Objetos</h5></li>
+                            <?php
+                                foreach($objeto as $o){
+                                    echo "<li class='collection-item avatar'>"
+                                        . "<span class='title'>{$o->descricao}</span>"
+                                        . "<p>{$o->tipoObjeto} | "
+                                        . "$o->Id</p>"
+                                        . "<p class='secondary-content'><a class='' href='pageEditObjeto.php?id=".base64_encode($o->Id)."'>Editar</a><br>"
+                                        . "<a class='' href='../Controller/deleteCtrl.php?idob=".base64_encode($o->Id)."'>Excluir</a></p>"
+                                    . "</li>";
+                                    //echo '<br><br>';
+                                }
+                            ?>
+                    </ul>
             </section>
-            <section class="col s6 m6 l6">
-                <div class="">
-                <h4 class="center">Lista de Residências</h4>
-                <div class="divider"></div>
-                <table class="highlight bordered">
-                    <thead>
-                        <tr>
-                            <th>Descrição</th><th>Id</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                            foreach($residencia as $r){
-                                echo "<tr><td>{$r->descricao}</td><td>{$r->Id}</td><td><a href='pageEditResidencia.php?id=".base64_encode($r->Id)."'>Editar</a></td><td><a href='../Controller/deleteCtrl.php?idres=".base64_encode($r->Id)."'>Excluir</a></td></tr>";
-                                //echo '<br><br>';
-                            }
-                        ?>
-                    </tbody>
-                    <tfoot>
-
-                    </tfoot>
-                </table>
-                </div>
+            
+            <section class="col s4 m4 l4">
+                <ul class="collection with-header">
+                    <li class="collection-header center"><h5>Residência</h5></li>
+                            <?php
+                                foreach($residencia as $r){
+                                    echo "<li class='collection-item avatar'>"
+                                        . "<span class='title'>{$r->descricao}</span>"
+                                        . "<p>{$r->Id}</p>"
+                                        . "<p class='secondary-content'><a class='' href='pageEditResidencia.php?id=".base64_encode($r->Id)."'>Editar</a><br>"
+                                        . "<a class='' href='../Controller/deleteCtrl.php?idres=".base64_encode($r->Id)."'>Excluir</a></p>"
+                                    . "</li>";
+                                    //echo '<br><br>';
+                                }
+                            ?>
+                    </ul>
             </section>
         </article>
     </article>

@@ -2,15 +2,17 @@
 include 'includes/header.php';
 include './../Controller/editarPageCtrl.php';
 ?>
-<div class="">
-    <article class="col s12 m12 l12">
-        <section class="container">
+<div class="container">
+    <article class="col s6 m6 l6">
+        <section class="row">
             <form action="../Controller/editarFinalObjeto.php" method="post">
-                <?php foreach($ob as $o): ?>
-                <div class="input-field">
-                    <input type="text" value="<?php echo base64_decode(filter_input(INPUT_GET, 'id')); ?>" readonly="readonly" name="id" />
-                </div>
-                <div class="col s12 m12 l12 input-field">
+                <?php foreach ($ob as $o): ?>
+                    <div class="col s6 m6 l6 input-field">
+                        <div class="input-field">
+                            <input type="text" value="<?php echo base64_decode(filter_input(INPUT_GET, 'id')); ?>" readonly="readonly" name="id" />
+                        </div>
+                    </div>
+                    <div class="col s6 m6 l6 input-field">
                         <br>
                         <select class="select-label" name="tipo">
                             <option value="" disabled="disabled"><?php echo $o->tipoObjeto; ?></option>
@@ -28,7 +30,7 @@ include './../Controller/editarPageCtrl.php';
                         <input type="submit" name="cadastrar" value="Atualizar" class="btn  blue grey darken-4">
                     </div>
                 <?php endforeach; ?>
-                </form>
+            </form>
         </section>
     </article>
 

@@ -2,9 +2,9 @@
 include 'includes/header.php';
 include './../Controller/editarPageCtrl.php';
 ?>
-<div class="">
+<div class="container">
     <article class="col s12 m12 l12">
-        <section class="container">
+        <section class="row">
             <form action="../Controller/editarFinalDisp.php" method="post">
                 <?php foreach($disp as $d): ?>
                 <div class="input-field">
@@ -37,6 +37,6 @@ include './../Controller/editarPageCtrl.php';
                 </form>
         </section>
     </article>
-
+    
 </div>
 <?php include 'includes/footer.php'; ?>

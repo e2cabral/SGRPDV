@@ -31,7 +31,7 @@
                 <br />
                 <br />
                 <section class="row">
-                    <div class="col s12 m12 l12">
+                    <div class="col s6 m6 l6">
                         <form action="Controller/cadastrarCtrl.php" method="post">
                             <div class="col s6 m6 l6 input-field">
                                 <input type="text" title="Digite seu nome completo" id="nome" name="nome" required />
@@ -78,7 +78,7 @@
                                 <input type="tel" title="Digite o seu celular" id="cel" name="cel" required />
                                 <label for="cel">Digite o seu celular</label>
                             </div>
-                            <div class="col s12 m12 l12 input-field">
+                            <div class="col s6 m6 l6 input-field">
                                 <br />
                                 <textarea class="materialize-textarea" title="Informe o seu grau de parentesco" name="def" id="def">
 

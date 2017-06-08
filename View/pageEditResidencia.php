@@ -3,14 +3,14 @@ include 'includes/header.php';
 include './../Controller/editarPageCtrl.php';
 ?>
 <div class="">
-    <article class="col s12 m12 l12">
+    <article class="col s6 m6 l6">
         <section class="container">
             <form action="../Controller/editarFinalResidencia.php" method="post">
                 <?php foreach($res as $r): ?>
                 <div class="input-field">
                     <input type="text" value="<?php echo base64_decode(filter_input(INPUT_GET, 'id')); ?>" readonly="readonly" name="id" />
                 </div>
-                    <div class="col s12 m12 l12 input-field">
+                    <div class="col s6 m6 l6 input-field">
                         <br />
                         <textarea class="materialize-textarea" title="Descriçao do sensor" name="desc" id="desc">
                             <?php echo $r->descricao; ?>

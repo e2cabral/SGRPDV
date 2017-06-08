@@ -2,9 +2,9 @@
 include 'includes/header.php';
 include './../Controller/editarPageCtrl.php';
 ?>
-<div class="">
-    <article class="col s12 m12 l12">
-        <section class="container">
+<div class="container">
+    <article class="col s6 m6 l6">
+        <section class="row">
             <form action="../Controller/editarFinalDef.php" method="post">
                 <?php foreach($deficiente as $def): ?>
                     <div class="col s6 m6 l6 input-field">
@@ -52,7 +52,7 @@ include './../Controller/editarPageCtrl.php';
                         <input type="tel" title="Digite o seu celular" id="cel" name="cel" value="<?php echo $def->celular; ?>" required />
                         <label for="cel">Edite o seu celular</label>
                     </div>
-                    <div class="col s12 m12 l12 input-field">
+                    <div class="col s6 m6 l6 input-field">
                         <br />
                         <select name="def" >
                             <option value="<?php echo $def->grauDeficiencia; ?>" readonly selected><?php echo $def->grauDeficiencia; ?></option>
