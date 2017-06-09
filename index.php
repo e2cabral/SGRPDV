@@ -31,33 +31,33 @@
                 <br />
                 <br />
                 <section class="row">
-                    <div class="col s6 m6 l6">
+                    <div class="col s12 m12 l12">
                         <form action="Controller/cadastrarCtrl.php" method="post">
-                            <div class="col s6 m6 l6 input-field">
+                            <div class="col s12 m6 l6 input-field">
                                 <input type="text" title="Digite seu nome completo" id="nome" name="nome" required />
                                 <label for="nome">Digite seu nome completo</label>
                             </div>
-                            <div class="col s6 m6 l6 input-field">
+                            <div class="col s12 m6 l6 input-field">
                                 <input type="text" title="Digite seu cpf" id="cpf" name="cpf" required />
                                 <label for="cpf">Digite seu CPF</label>
                             </div>
-                            <div class="col s6 m6 l6 input-field">
+                            <div class="col s12 m6 l6 input-field">
                                 <input type="text" title="Digite sua idade" id="idade" name="idade" required />
                                 <label for="idade">Digite sua idade</label>
                             </div>
 
 
-                            <div class="col s6 m6 l6 input-field">
+                            <div class="col s12 m6 l6 input-field">
                                 <input type="text" title="Digite seu Login" id="login" name="login" required />
                                 <label for="login">Digite seu Login</label>
                             </div>
-                            <div class="col s6 m6 l6 input-field">
+                            <div class="col s12 m6 l6 input-field">
                                 <input type="text" title="Digite sua Senha" id="senha" name="senha" required />
                                 <label for="senha">Digite sua Senha</label>
                             </div>
 
 
-                            <div class="col s6 m6 l6 input-field">
+                            <div class="col s12 m6 l6 input-field">
                                 <input type="text" title="Digite o seu endereço" id="endereco" name="endereco" required />
                                 <label for="">Digite o seu endereço</label>
                             </div>
@@ -78,7 +78,7 @@
                                 <input type="tel" title="Digite o seu celular" id="cel" name="cel" required />
                                 <label for="cel">Digite o seu celular</label>
                             </div>
-                            <div class="col s6 m6 l6 input-field">
+                            <div class="col s12 m12 l12 input-field">
                                 <br />
                                 <textarea class="materialize-textarea" title="Informe o seu grau de parentesco" name="def" id="def">
 
